@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+}
+
+main{
+  width: 100%;
+  max-width: 1020px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.articleContent{
+  height: 100%;
+  width: 100%;
+  max-width: 580px;
+}
+
+p{
+  font-size: 18px;
+  line-height: auto;
+  margin-bottom: 20px;
+}
+
+
+.frifag-carousel-container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.frifag-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.frifag-carousel-owerflow {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frifag-carousel-item {
+  min-width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+
+}
+
+.frifag-carousel-item img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+
+}
+
+
+.portrait img{
+  max-height: 350px;
+  width: auto;
+}
+
+.frifag-carousel-description p {
+  color: #7c7c7c;
+  font-size: 14px;
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+.carousel-backward,
+.carousel-forward {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+  background-color: #ffffff7e;
+  padding: 10px;
+}
+
+.carousel-backward {
+  position: absolute;
+  top: 45%;
+  left: 10px;
+  transform: translateY(-50%);
+}
+
+.carousel-forward {
+  position: absolute;
+  top: 45%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.frifag-carousel-indicator {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  z-index: 100;
+}
+
+.pebble {
+  width: 10px;
+  height: 10px;
+  background-color: #ff6a00a1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.active {
+  width: 12px;
+  height: 12px;
+  background-color: #ff6a00;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
